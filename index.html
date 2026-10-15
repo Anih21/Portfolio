@@ -4,189 +4,861 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anih Joshi | Portfolio</title>
+    <meta name="description" content="Anih Joshi - Computer Science Engineering Student, Full-Stack Developer, Cybersecurity Enthusiast, and UI/UX Designer. Portfolio showcasing projects, experience, and certifications.">
+    <meta name="author" content="Anih Joshi">
+    <title>Anih Joshi | Software Engineer & Cybersecurity Enthusiast</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts: Space Grotesk & Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-    <nav>
-        <div class="logo">AJ.</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Background Decorative Canvas Grid -->
+    <div class="bg-grid-pattern" aria-hidden="true"></div>
 
-    <section class="hero">
-        <div class="left">
-            <div class="status">
-                <span class="pulse"></span> Gaining experience as an Intern
+    <!-- Navigation Bar -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-text">Anih<span class="logo-accent">.dev</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="images/Anih_Joshi_Resume_ATS.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav">
+                    <span>Resume</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-            <h3>Hello, I'm</h3>
-            <h1>ANIH JOSHI</h1>
-            <h2>Computer Science Engineering Student</h2>
-            <p>
-                Web Developer • Cybersecurity Enthusiast • AI Engineer • Photographer
-                <br><br>
-                Passionate about building modern digital experiences and solving real-world problems through technology. Loves to capture moments and memories through my lens.  
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        <span class="status-text">Open to Software & Security Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building robust web apps with a lens on <span class="gradient-text">security & design</span>.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Hi, I'm <strong>Anih Joshi</strong> — a Computer Science Engineering undergraduate (CGPA 8.68) specializing in 
+                        <strong>Full-Stack Development</strong>, <strong>Cybersecurity Reconnaissance</strong>, and modern <strong>UI/UX Design</strong>.
+                        Currently interning at Axinex Technologies and building production-ready digital products.
+                    </p>
+
+                    <!-- Terminal Code Snippet Widget -->
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-close"></span>
+                                <span class="dot dot-minimize"></span>
+                                <span class="dot dot-maximize"></span>
+                            </div>
+                            <span class="terminal-label">anih@portfolio:~</span>
+                        </div>
+                        <div class="terminal-content mono">
+                            <div class="terminal-row">
+                                <span class="cmd-prompt">$</span>
+                                <span class="cmd-text">curl -s api.anih.dev/status</span>
+                            </div>
+                            <div class="terminal-output">
+                                { "role": "CSE Undergrad @ Sandip Univ", "focus": ["React", "Node.js", "AppSec", "OSINT"], "status": "shipping" }
+                            </div>
+                            <div class="terminal-row">
+                                <span class="cmd-prompt">$</span>
+                                <span class="cmd-text">echo $RECENT_WORK</span>
+                            </div>
+                            <div class="terminal-output text-accent">
+                                "My Arc (Gen-Z Productivity Platform) + Lenskart Recon Audit"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="images/Anih_Joshi_Resume_ATS.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>View ATS Resume</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                        </a>
+                        <div class="hero-social-links">
+                            <a href="https://github.com/Anih21" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anih-joshi-2a7ab5309/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:anihjoshi31@gmail.com" class="social-icon-btn" aria-label="Send Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-frame">
+                            <span class="tech-corner tl"></span>
+                            <span class="tech-corner tr"></span>
+                            <span class="tech-corner bl"></span>
+                            <span class="tech-corner br"></span>
+                            <img src="images/anih-image.jpeg" alt="Anih Joshi - Software Engineer & Cybersecurity Enthusiast" class="avatar-img" loading="eager">
+                        </div>
+                        <div class="floating-badge">
+                            <i class="fa-solid fa-shield-halved badge-icon"></i>
+                            <div class="badge-text">
+                                <span class="badge-title">AppSec & OSINT</span>
+                                <span class="badge-desc">Threat Modeling Practitioner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Metrics / Key Highlight Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="metric-info">
+                        <span class="metric-value">8.68 CGPA</span>
+                        <span class="metric-label">B.Tech Computer Science</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <div class="metric-info">
+                        <span class="metric-value">3+ Clients</span>
+                        <span class="metric-label">Shipped at Axinex</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="metric-info">
+                        <span class="metric-value">12+ Repos</span>
+                        <span class="metric-label">Open Source & Web Apps</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="metric-info">
+                        <span class="metric-value">4 Verified</span>
+                        <span class="metric-label">Credentials & Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section class="section-container" id="about">
+            <div class="section-header">
+                <span class="section-tag mono">// 01. PROFILE</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-narrative">
+                    <p class="lead-text">
+                        I am an engineer by training and a builder by instinct. I bridge the gap between clean interface engineering, backend reliability, and cybersecurity best practices.
+                    </p>
+                    <p>
+                        My journey began with a fundamental curiosity: understanding how applications work under the hood, how systems scale, and where vulnerabilities hide. Over the past few years, this has materialized into practical engineering expertise across three domains:
+                    </p>
+                    
+                    <div class="pillars-list">
+                        <div class="pillar-item">
+                            <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <h4>Full-Stack & Front-End Engineering</h4>
+                                <p>Building interactive, accessible, and high-performance web applications using modern stacks (React, Node.js, Express, MongoDB, Tailwind).</p>
+                            </div>
+                        </div>
+                        <div class="pillar-item">
+                            <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4>Application Security & Threat Modeling</h4>
+                                <p>Hands-on experience in OSINT reconnaissance, DNS footprinting, registrar analysis, and identifying common web security vectors.</p>
+                            </div>
+                        </div>
+                        <div class="pillar-item">
+                            <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <h4>Applied Artificial Intelligence</h4>
+                                <p>Experimenting with computer vision algorithms, image-based classification, and AI APIs to solve tangible problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="card sidebar-card">
+                        <h3 class="card-heading"><i class="fa-solid fa-address-card"></i> Contact Overview</h3>
+                        <ul class="contact-quicklist">
+                            <li>
+                                <span class="label">Location</span>
+                                <span class="val">Nashik, Maharashtra, India</span>
+                            </li>
+                            <li>
+                                <span class="label">University</span>
+                                <span class="val">Sandip University (2023 - 2027)</span>
+                            </li>
+                            <li>
+                                <span class="label">Email</span>
+                                <a href="mailto:anihjoshi31@gmail.com" class="val val-link">anihjoshi31@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="label">Phone</span>
+                                <a href="tel:+918856052873" class="val val-link">+91 8856052873</a>
+                            </li>
+                            <li>
+                                <span class="label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/anih-joshi-2a7ab5309/" target="_blank" rel="noopener noreferrer" class="val val-link">
+                                    in/anih-joshi-2a7ab5309 <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="label">GitHub</span>
+                                <a href="https://github.com/Anih21" target="_blank" rel="noopener noreferrer" class="val val-link">
+                                    github.com/Anih21 <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+        <section class="section-container" id="experience">
+            <div class="section-header">
+                <span class="section-tag mono">// 02. CAREER</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Role 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="card-top">
+                            <div>
+                                <h3 class="role-title">Front-End & Graphic Designer Intern</h3>
+                                <h4 class="company-name">
+                                    <i class="fa-solid fa-building"></i> Axinex Technologies
+                                </h4>
+                            </div>
+                            <span class="duration-badge mono">May 2026 – Present</span>
+                        </div>
+                        <ul class="role-bullets">
+                            <li>Developed and maintain responsive, production-grade web interfaces for 3 commercial client projects using HTML, CSS, JavaScript, React, and Bootstrap.</li>
+                            <li>Translated Figma client wireframes into pixel-perfect, accessible, and fast-loading web components.</li>
+                            <li>Created digital branding assets, illustrations, and user interface elements that align with each client's visual identity.</li>
+                            <li>Collaborated directly with engineering leads on code reviews, Git version control workflows, and UI enhancements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="card-top">
+                            <div>
+                                <h3 class="role-title">Cybersecurity Intern</h3>
+                                <h4 class="company-name">
+                                    <i class="fa-solid fa-shield-virus"></i> Civora Nexus
+                                </h4>
+                            </div>
+                            <span class="duration-badge mono">July 2025 – August 2025</span>
+                        </div>
+                        <ul class="role-bullets">
+                            <li>Conducted structured passive reconnaissance on live production infrastructure using OSINT tools including WHOIS, DNS Lookup, MXToolbox, and BuiltWith.</li>
+                            <li>Performed end-to-end reconnaissance and security footprint analysis on enterprise domains (e.g., Lenskart).</li>
+                            <li>Identified and documented critical threat vectors including phishing vulnerabilities, registrar misconfigurations, and social engineering risks.</li>
+                            <li>Authored and published a formal security audit report detailing attack surface mapping and remediation recommendations.</li>
+                        </ul>
+                        <div class="timeline-footer">
+                            <a href="https://github.com/Anih21/Lenskart-Recon-Report" target="_blank" rel="noopener noreferrer" class="btn-text-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Inspect Lenskart Reconnaissance Report</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section class="section-container" id="skills">
+            <div class="section-header">
+                <span class="section-tag mono">// 03. CAPABILITIES</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-categorized-grid">
+                <!-- Group 1: Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-pill-wrap">
+                        <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+                        <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-badge"><i class="fa-solid fa-code"></i> C</span>
+                        <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Group 2: Web & Full-Stack -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Web & Full-Stack</h3>
+                    </div>
+                    <div class="skills-pill-wrap">
+                        <span class="skill-badge"><i class="fa-brands fa-react"></i> React.js</span>
+                        <span class="skill-badge"><i class="fa-brands fa-node"></i> Node.js</span>
+                        <span class="skill-badge"><i class="fa-solid fa-server"></i> Express.js</span>
+                        <span class="skill-badge"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="skill-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                        <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
+                    </div>
+                </div>
+
+                <!-- Group 3: Cybersecurity & Tools -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Security & Tools</h3>
+                    </div>
+                    <div class="skills-pill-wrap">
+                        <span class="skill-badge"><i class="fa-solid fa-magnifying-glass"></i> OSINT Recon</span>
+                        <span class="skill-badge"><i class="fa-solid fa-bug"></i> Threat Modeling</span>
+                        <span class="skill-badge"><i class="fa-solid fa-globe"></i> DNS / WHOIS</span>
+                        <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-badge"><i class="fa-solid fa-terminal"></i> Linux CLI</span>
+                        <span class="skill-badge"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+                        <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Vercel</span>
+                    </div>
+                </div>
+
+                <!-- Group 4: UI/UX & AI -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>UI/UX & Concepts</h3>
+                    </div>
+                    <div class="skills-pill-wrap">
+                        <span class="skill-badge"><i class="fa-brands fa-figma"></i> Wireframing & Prototyping</span>
+                        <span class="skill-badge"><i class="fa-solid fa-pen-nib"></i> Graphic Design</span>
+                        <span class="skill-badge"><i class="fa-solid fa-cubes"></i> OOP Principles</span>
+                        <span class="skill-badge"><i class="fa-solid fa-robot"></i> AI / Computer Vision</span>
+                        <span class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section class="section-container" id="projects">
+            <div class="section-header">
+                <span class="section-tag mono">// 04. PORTFOLIO</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: My Arc -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">Full-Stack · Flagship</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/My_Arc" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://myarc-lemon.vercel.app" target="_blank" rel="noopener noreferrer" class="link-icon" title="View Live Deployment" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">My Arc — Habit & Discipline Platform</h3>
+                    <p class="project-description">
+                        A full-stack productivity web application that enables users to structure daily routines, monitor consistency streaks, earn XP, and unlock achievements. Features secure JWT authentication, responsive dashboards, and OTP verification flow.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://myarc-lemon.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-action primary">
+                            <span>Live App</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Anih21/My_Arc" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Moo-ID -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">AI & Computer Vision</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/Moo---Id" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Moo-ID — AI Livestock Identifier</h3>
+                    <p class="project-description">
+                        An AI-driven livestock recognition system that analyzes uploaded images to identify specific cattle and buffalo breeds, presenting demographic lineage, biological characteristics, and geographical origin data.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Computer Vision</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Anih21/Moo---Id" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on GitHub</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: RaktaMitra -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">Web Platform · Healthcare</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/RaktaMitra" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://rakta-mitra-ebon.vercel.app" target="_blank" rel="noopener noreferrer" class="link-icon" title="View Live Deployment" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RaktaMitra — Blood Donation Connect</h3>
+                    <p class="project-description">
+                        A community-oriented web platform designed to streamline emergency blood donation matching, connecting verified local donors with recipients and healthcare centers quickly and transparently.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive UI</span>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://rakta-mitra-ebon.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-action primary">
+                            <span>Live Demo</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Anih21/RaktaMitra" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Lenskart Recon Audit -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">Cybersecurity Audit</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/Lenskart-Recon-Report" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Lenskart OSINT Reconnaissance</h3>
+                    <p class="project-description">
+                        A comprehensive passive reconnaissance report mapping live attack vectors, mail configuration vulnerabilities (SPF/DKIM/DMARC checks), DNS topology, and registrar records with threat modeling matrices.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>OSINT</span>
+                        <span>Threat Modeling</span>
+                        <span>DNS Recon</span>
+                        <span>Security Reporting</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Anih21/Lenskart-Recon-Report" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Audit Report</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 5: Vasudha Enterprises -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">Client Web Production</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/Vasudha-Enterprizes" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://vasudha-enterprises-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="link-icon" title="View Live Deployment" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Vasudha Enterprises Business Site</h3>
+                    <p class="project-description">
+                        Commercial web landing page built for a Latur enterprise specializing in printer servicing, toner refilling, and POS hardware support, featuring high-conversion layouts and responsive design.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>HTML5</span>
+                        <span>Tailwind CSS</span>
+                        <span>JavaScript</span>
+                        <span>ScrollReveal</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://vasudha-enterprises-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-action primary">
+                            <span>Live Site</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Anih21/Vasudha-Enterprizes" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 6: SVPV Omerga -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-badge-tag mono">Institutional Website</div>
+                        <div class="project-links-top">
+                            <a href="https://github.com/Anih21/S.V.P.V.Omerga" target="_blank" rel="noopener noreferrer" class="link-icon" title="View GitHub Repository" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://svpvomerga.vercel.app" target="_blank" rel="noopener noreferrer" class="link-icon" title="View Live Deployment" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SVPV Omerga School Portal</h3>
+                    <p class="project-description">
+                        A clean and accessible web platform designed for Swami Vivekanand Prathamik Vidyamandir (Omerga), displaying institutional curricula, admissions information, and school announcements.
+                    </p>
+                    <div class="project-tech-stack mono">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://svpvomerga.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-card-action primary">
+                            <span>Live Portal</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/Anih21/S.V.P.V.Omerga" target="_blank" rel="noopener noreferrer" class="btn-card-action secondary">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATIONS SECTION ================= -->
+        <section class="section-container" id="certifications">
+            <div class="section-header">
+                <span class="section-tag mono">// 05. CREDENTIALS</span>
+                <h2 class="section-title">Certifications & Accreditations</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <p class="section-lead-center">
+                All certificates open in a separate window/tab for verification.
             </p>
-            <div class="buttons">
-                <a href="https://github.com/Anih21" class="btn">View Projects</a>
-                <a href="images/Anih_Joshi_Resume_ATS.pdf" class="btn2">Download Resume</a>
-            </div>
-        </div>
 
-        <div class="right">
-            <div class="profile-glow"></div>
-            <img src="images/anih-image.jpeg" alt="Anih Joshi" class="profile">
-        </div>
-    </section>
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer mono">Forage · Virtual Experience</span>
+                        <h3 class="cert-name">Cybersecurity Fundamentals</h3>
+                        <p class="cert-desc">Covered enterprise threat analysis, incident response concepts, and security operations.</p>
+                        <div class="cert-link-box">
+                            <a href="images/Forage Certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+                                <span>Verify Certificate (PDF)</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <section class="info">
-        <div class="card">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Nashik</h3>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>anihjoshi31@gmail.com</h3>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-phone"></i>
-            <h3>+91 8856052873</h3>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-briefcase"></i>
-            <h3>Intern</h3>
-        </div>
-    </section>
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer mono">Civora Nexus · Internship</span>
+                        <h3 class="cert-name">Cybersecurity Internship Certificate</h3>
+                        <p class="cert-desc">Verified completion of reconnaissance, DNS foot-printing, and structured security threat modeling.</p>
+                        <div class="cert-link-box">
+                            <a href="images/civora certificate.jfif" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+                                <span>Verify Certificate</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-box">
-            I am a Computer Science Engineering student passionate about Web Development, Cybersecurity, Artificial Intelligence, and Graphic Designing.
-            <br><br>
-            I enjoy building responsive websites and continuously learning new technologies. I also enjoy capturing moments and memories through photography.
-        </div>
-    </section>
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer mono">Microsoft Azure</span>
+                        <h3 class="cert-name">Azure AI Fundamentals</h3>
+                        <p class="cert-desc">Fundamental knowledge of machine learning workloads, computer vision, and cognitive AI services.</p>
+                        <div class="cert-link-box">
+                            <a href="images/Azure Fundamentals.jfif" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+                                <span>Verify Certificate</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>React</div>
-            <div>Python</div>
-            <div>Java</div>
-            <div>Git</div>
-            <div>Cybersecurity</div>
-            <div>Graphic Design</div>
-            <div>Photography</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Animal Breed Identifier</h3>
-                <p>AI Based Cattle Breed Identification System.</p>
-                <a href="https://github.com/Anih21/Animal-Breed-Identifier" class="btn-outline">View Project</a>
-            </div>
-            <div class="project">
-                <h3>SVPV Omerga</h3>
-                <p>Responsive School Website.</p>
-                <a href="https://github.com/Anih21/S.V.P.V.Omerga" class="btn-outline">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Vasudha Enterprises</h3>
-                <p>Business Website.</p>
-                <a href="https://github.com/Anih21/Vasudha-Enterprizes" class="btn-outline">View Project</a>
-            </div>
-        </div>
-    </section>
-
-   <section id="certifications">
-        <h2>Certifications</h2>
-       
-            <div class="cert-card">
-                                <div class="cert-info">
-                    <h3>Cybersecurity Fundamentals</h3>
-                    <p>Issued by: Forage</p>
-                    <a href="https://drive.google.com/file/d/14F4tknbsXbKxHHH64CLQqTEJBuppTtN3/view?usp=sharing" class="btn-outline cert-btn">View Certificate</a>
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer mono">Extern's Club</span>
+                        <h3 class="cert-name">Internship Completion Certificate</h3>
+                        <p class="cert-desc">Demonstrated technical aptitude in software development modules and project implementation.</p>
+                        <div class="cert-link-box">
+                            <a href="images/Externs Club.jfif" target="_blank" rel="noopener noreferrer" class="btn-cert-link">
+                                <span>Verify Certificate</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-          <br>
-            <div class="cert-card">
-                                <div class="cert-info">
-                    <h3>Internship Completion Certificate</h3>
-                    <p>Issued by: Civora Nexus</p>
-                    <a href="images/civora certificate.jfif" class="btn-outline cert-btn">View Certificate</a>
-                </div>
-            </div>
-          <br>
-            <div class="cert-card">
-                                <div class="cert-info">
-                    <h3>Azure AI Fundamentals</h3>
-                    <p>Issued by: Microsoft Azure</p>
-                    <a href="images/Azure Fundamentals.jfif" class="btn-outline cert-btn">View Certificate</a>
-                </div>
-            </div>
-            <br>
-            
-        <div class="cert-card">
-                                <div class="cert-info">
-                    <h3>Internship Completion Certificate</h3>
-                    <p>Issued by: Extern's Club</p>
-                    <a href="images/Externs Club.jfif" class="btn-outline cert-btn">View Certificate</a>
-                </div>
-            </div>
-            <br>
+        </section>
 
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="exp">
-                <h3>Front End & Graphic Designer Intern</h3>
-                <h4>Axinex Technologies</h4>
-                <span>May 2026 - Present</span>
-                <p>Contributed in Developing 2 client websites along with creating branding and graphic assets, and currently working on the 3rd project.</p>
+        <!-- ================= EDUCATION SECTION ================= -->
+        <section class="section-container" id="education">
+            <div class="section-header">
+                <span class="section-tag mono">// 06. ACADEMICS</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
             </div>
-            <div class="exp">
-                <h3>Cyber Security Intern</h3>
-                <h4>Civora Nexus</h4>
-                <span>July 2025 - August 2025</span>
-                <p>Conducted reconnaissance, DNS analysis, threat modelling and security reporting. Submitted the proper study and Recon report for Lenskart.</p>
-                <br>
-                <a href="https://github.com/Anih21/Lenskart-Recon-Report" class="btn-outline">View Report</a>
+
+            <div class="education-grid">
+                <!-- University -->
+                <div class="education-card highlight">
+                    <div class="edu-top">
+                        <span class="edu-badge mono">2023 – 2027 (Expected)</span>
+                        <span class="edu-score mono">CGPA: 8.68 / 10.0</span>
+                    </div>
+                    <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+                    <h4 class="edu-school"><i class="fa-solid fa-university"></i> Sandip University, Nashik</h4>
+                    <p class="edu-details">
+                        Key Coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, Operating Systems, Web Technologies.
+                    </p>
+                </div>
+
+                <!-- Junior College -->
+                <div class="education-card">
+                    <div class="edu-top">
+                        <span class="edu-badge mono">2022 – 2023</span>
+                        <span class="edu-score mono">Score: 68.32%</span>
+                    </div>
+                    <h3 class="edu-degree">Higher Secondary Certificate (12th Standard)</h3>
+                    <h4 class="edu-school"><i class="fa-solid fa-school"></i> Dayanand Science College, Latur</h4>
+                    <p class="edu-details">Maharashtra State Board curriculum with a focus on Physics, Chemistry, and Mathematics.</p>
+                </div>
+
+                <!-- Secondary -->
+                <div class="education-card">
+                    <div class="edu-top">
+                        <span class="edu-badge mono">2020 – 2021</span>
+                        <span class="edu-score mono">Score: 80.20%</span>
+                    </div>
+                    <h3 class="edu-degree">Secondary School Examination (10th Standard)</h3>
+                    <h4 class="edu-school"><i class="fa-solid fa-school"></i> Sri Sri Ravishankar English Primary School, Latur</h4>
+                    <p class="edu-details">Central Board of Secondary Education (CBSE) with distinction in Mathematics and Computer Applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="section-container" id="contact">
+            <div class="contact-box">
+                <span class="section-tag mono">// 07. GET IN TOUCH</span>
+                <h2 class="contact-title">Let's build something impactful together</h2>
+                <p class="contact-description">
+                    Whether you have an internship or full-time opportunity, a software project to develop, or just want to connect over cybersecurity and AI, I'd love to hear from you.
+                </p>
+
+                <div class="contact-cards-container">
+                    <a href="mailto:anihjoshi31@gmail.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-card-text">
+                            <span class="contact-type">Email Address</span>
+                            <span class="contact-val">anihjoshi31@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+918856052873" class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-card-text">
+                            <span class="contact-type">Phone</span>
+                            <span class="contact-val">+91 8856052873</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-card-text">
+                            <span class="contact-type">Location</span>
+                            <span class="contact-val">Nashik, Maharashtra, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social-bar">
+                    <a href="https://github.com/Anih21" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anih-joshi-2a7ab5309/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                    </a>
+                    <a href="images/Anih_Joshi_Resume_ATS.pdf" target="_blank" rel="noopener noreferrer" class="social-pill highlight-pill" aria-label="ATS Resume">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <span>Resume</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">Anih<span class="logo-accent">.dev</span></span>
+                <p class="footer-text">Designed & developed with precision, clean code, and security in mind.</p>
+            </div>
+            <div class="footer-right mono">
+                <p>© 2026 Anih Joshi · All Rights Reserved.</p>
             </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Let's Connect</h2>
-        <p>Email: anihjoshi31@gmail.com</p>
-        <p>Phone: +91 8856052873</p>
-        <div class="social">
-            <a href="https://github.com/Anih21"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/anih-joshi-79a28b24b/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/anih_aj/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com/dil.se.click_/"><i class="fa-solid fa-camera"></i></a> </div>
-    </section>
-
-    <footer>
-        © 2026 Anih Joshi | Designed with ❤️
     </footer>
 
+    <!-- Minimal Vanilla JavaScript for Interactivity -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (mobileToggle && navMenu) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileToggle.classList.toggle('active');
+            });
+
+            // Close mobile menu when a nav link is clicked
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Active Navigation Highlight on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
